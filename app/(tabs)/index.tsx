@@ -1,34 +1,15 @@
-import { StyleSheet, Button } from "react-native";
-
-import EditScreenInfo from "../../components/EditScreenInfo";
+import { StyleSheet } from "react-native";
 import { Text, View } from "../../components/Themed";
-import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
 
 export default function TabOneScreen() {
-  const width = useSharedValue(100);
-
-  const handlePress = () => {
-    width.value = withSpring(width.value + 50);
-  };
-
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+      <Text style={styles.title}>Home</Text>
       <View
         style={styles.separator}
-        lightColor="#eee"
+        lightColor="rgba(255,255,255,0.1)"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-      <Animated.View
-        style={{
-          width,
-          height: 100,
-          backgroundColor: "violet",
-          borderRadius: 10,
-        }}
-      />
-      <Button onPress={handlePress} title="Click me" />
     </View>
   );
 }
