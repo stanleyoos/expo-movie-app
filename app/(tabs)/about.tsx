@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Text, View } from "../../components/Themed";
+import { Text, View } from "react-native";
 import { Link } from "expo-router";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
@@ -23,11 +23,6 @@ export default function TabThreeScreen() {
           />
         </Link>
       </View>
-      <View
-        style={styles.separator}
-        lightColor="rgba(255,255,255,0.1)"
-        darkColor="rgba(255,255,255,0.1)"
-      />
     </View>
   );
 }
@@ -41,17 +36,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
+    color: "#ffffff",
   },
 
   subtitle: {
     marginTop: 20,
     marginBottom: 20,
     fontSize: 16,
-  },
-
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
+    color: "#ffffff",
   },
 });
