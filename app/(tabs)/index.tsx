@@ -1,23 +1,25 @@
 import { StyleSheet } from "react-native";
 import { Text, View } from "react-native";
+import { useFetch } from "../../hook/useFetch";
 
 export default function TabOneScreen() {
+  useFetch();
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
+      <Text style={styles.title}>Movie App</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
   },
   title: {
-    fontSize: 20,
+    fontSize: 42,
     fontWeight: "bold",
+    marginTop: 40,
     color: "#ffffff",
   },
 });
