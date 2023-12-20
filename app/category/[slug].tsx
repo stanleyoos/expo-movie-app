@@ -1,12 +1,21 @@
+import React from "react";
+import { View, Text } from "react-native";
 import { StyleSheet } from "react-native";
+
+const CategoryPage = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Category</Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
-    maxWidth: 900,
     marginTop: 40,
     alignItems: "center",
     width: "100%",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     border: "1px solid white",
     color: "#ffffff",
   },
@@ -17,18 +26,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: "#ffffff",
   },
-  categoryElement: {
-    fontSize: 26,
-    color: "#ffffff",
-    padding: 20,
-    border: "1px solid white",
-    margin: 15,
-    borderRadius: 10,
-    //width: 200,
-  },
-  categoriesContainer: {
-    width: "100%",
-  },
 });
 
-export default styles;
+export default CategoryPage;

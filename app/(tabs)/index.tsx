@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Text, View } from "react-native";
+import AnimatedStyleUpdateExample from "../../components/home/AnimatedComponent/AnimatedComponent";
 
 import Categories from "../../components/home/Categories/Categories";
 
@@ -8,6 +9,7 @@ export default function TabOneScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Movie App</Text>
       <Categories />
+      {/* <AnimatedStyleUpdateExample /> */}
     </View>
   );
 }
