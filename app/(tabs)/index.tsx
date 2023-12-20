@@ -1,12 +1,13 @@
 import { StyleSheet } from "react-native";
 import { Text, View } from "react-native";
-import { useFetch } from "../../hook/useFetch";
+
+import Categories from "../../components/home/Categories/Categories";
 
 export default function TabOneScreen() {
-  useFetch();
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Movie App</Text>
+      <Categories />
     </View>
   );
 }
