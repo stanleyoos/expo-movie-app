@@ -24,10 +24,13 @@ const styles = StyleSheet.create({
     border: "1px solid white",
     margin: 5,
     borderRadius: 10,
+    //width: 200,
   },
   categoriesContainer: {
+    // width: "100%",
     display: "flex",
     flexDirection: "row",
+    flex: 1,
     flexWrap: "wrap",
   },
 });
