@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     justifyContent: "flex-start",
-    border: "1px solid white",
     color: "#ffffff",
   },
   title: {
@@ -16,6 +15,20 @@ const styles = StyleSheet.create({
     marginTop: 50,
     marginBottom: 20,
     color: "#ffffff",
+  },
+
+  upcomingMoviesElement: {
+    fontSize: 26,
+    color: "#ffffff",
+    padding: 20,
+    border: "1px solid white",
+    margin: 20,
+    borderRadius: 10,
+    //width: 200,
+  },
+
+  upcomingMoviesContainer: {
+    width: "100%",
   },
 });
 

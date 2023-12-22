@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     justifyContent: "flex-start",
-    border: "1px solid white",
     color: "#ffffff",
   },
   title: {
@@ -22,7 +21,7 @@ const styles = StyleSheet.create({
     color: "#ffffff",
     padding: 20,
     border: "1px solid white",
-    margin: 15,
+    margin: 10,
     borderRadius: 10,
     //width: 200,
   },
