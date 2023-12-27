@@ -11,6 +11,7 @@ const MoviePoster = ({ movie }: { movie: any }) => {
         style={styles.movieImage}
       />
       <Text style={styles.title}>{movie.originalTitleText.text}</Text>
+      <Text style={styles.year}>{movie.releaseDate.year}</Text>
     </View>
   );
 };
